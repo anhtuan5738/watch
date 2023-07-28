@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lio chess</title>
+    <link rel="icon" href="/images/Untit" width="100%" type="image/x-icon">
+
+    <!--CSS-->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <link href="css/icon/css/all.min.css" rel="stylesheet">
+    <link href="css/OwlCarousel2-2.3.4/owl.carousel.min.css"  rel="stylesheet" >
+    <link href="css/OwlCarousel2-2.3.4/owl.theme.default.min.css"  rel="stylesheet" >
+    <link href="css/trangchu.css" rel="stylesheet">
+      
+    <!--JavaScript--> 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#nav-sp").hide();
+            $(".nav-mob").hide();
+            $(".nav-mob").hide();
+            $(".nav-mob-sea").hide();
+            $("#bs").hide();
+            $(".nav-mob-sp").hide();
+            $(".owl-nav").hide();
+            
+            $("#sp").click(function(){
+                $("#nav-sp").slideToggle();
+                $("#bs").fadeToggle();
+            });
+             $("#sp1").click(function(){
+                $(".nav-mob-sp").slideToggle();
+                $("#bs").fadeToggle();
+            });
+            $("#nav-sea").click(function(){
+                $(".nav-mob-sea").slideToggle();
+                $("#bs").fadeToggle();
+                 $(".nav-mob").slideUp();
+            });
+            $("#nav-bar").click(function(){
+                $(".nav-mob").slideToggle();
+                $("#bs").fadeToggle();
+                $(".nav-mob-sea").slideUp();
+            });
+            $("#bs").click(function(){
+                $(".nav-mob, #nav-sp,.nav-mob-sea,.nav-mob").slideUp();
+                $(this).fadeOut();
+            });
+        });
+        
+         $(document).ready(function(){
+          $(".ban-hea").owlCarousel({
+                margin: 30,
+                items: 1,
+                loop: true,
+                autoplay: true,
+                dots: false,
+                navContainerClass: true,
+          });
+        });
+        
+        $(document).ready(function(){
+          $(".pro-hea-img").owlCarousel({
+                margin: 30,
+                loop: true,
+                autoplay: true,
+                dots: false,
+                responsive:{
+                  0:{
+                      items: 1,
+                  },
+                  576:{
+                      items: 2,
+                  },
+                  768:{
+                      items: 1,
+                  },
+                  992:{
+                      items: 2,
+                  },
+                  1200:{
+                      items: 2,
+                      autoplay: false,
+                  },
+              }
+          });
+        }); 
+        
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                margin: 15,
+                loop: true,
+                autoplay: true,
+                dots: false,
+                responsive:{
+                    0:{
+                        items: 1,
+                    },
+                    576:{
+                        items: 2,
+                    },
+                    768:{
+                        items: 2,
+                    },
+                    992:{
+                        items: 3,
+                    },
+                    1200:{
+                        items: 4,
+                        autoplay: false,
+                    },
+                }
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <!-- Modal content-->
+    <div class="modal fade mod-in" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content mod-con">
+                        <div class="mod-hea">Đăng nhập</div><button type="" class="mod-exi" data-dismiss="modal">&times;</button> 
+                        <form action="" method="post">
+                            <label>Tài khoản</label>
+                            <input class="mod-box" type="text" placeholder="Email hoặc tên đăng nhập...">
+                        </form>
+                        <form action="" method="post">
+                            <label>Mật khẩu</label>
+                            <input class="mod-box" type="password" placeholder="Mật khẩu...">
+                        </form>
+                        <form action="" method="post">
+                            <a href="" class="mod-pas">Quên mật khẩu?</a>
+                            <input id="mod-che-in" type="checkbox"><label for="mod-che-in">Tôi đồng ý điều khoản đăng nhập</label>
+                        </form>
+                        <form action="" method="post" class="but-mes mod-but-hea">
+                            <button class="mod-but">Đăng nhập</button>
+                        </form>
+                        <form action="" method="post" class="mod-add">
+                            <button class="mod-add-but google"><i class="fab fa-google"></i></button>
+                            <button class="mod-add-but facebook"><i class="fab fa-facebook-f"></i></button>
+                        </form>
+                        <div class="mod-foo">Tôi chưa có tài khoản? <strong><a href="#" data-toggle="modal" data-target=".mod-up" data-dismiss="modal">Đăng kí</a></strong></div>
+                    </div><!--modal-content-->
+                </div><!--modal-dialog-->
+            </div><!--đăng nhập-->
+    <div class="modal fade mod-up" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content mod-con">
+                        <div class="mod-hea">Đăng kí</div><button type="" class="mod-exi" data-dismiss="modal">&times;</button> 
+                        <form action="" method="post">
+                            <label>Tên tài khoản</label>
+                            <input class="mod-box" type="text" placeholder="Họ và tên...">
+                        </form>
+                        <form action="" method="post">
+                            <label>Email</label>
+                            <input class="mod-box" type="email" placeholder="Email...">
+                        </form>
+                        <form action="" method="post">
+                            <label>Mật khẩu</label>
+                            <input class="mod-box" type="password" placeholder="Mật khẩu...">
+                        </form>
+                         <form action="" method="post">
+                            <label>Nhập lại mật khẩu</label>
+                            <input class="mod-box" type="password" placeholder="Mật khẩu...">
+                        </form>
+                        <form action="" method="post">
+                            <input id="mod-che-up" type="checkbox"><label for="mod-che-up">Tôi đồng ý xác nhận điều khoản đăng kí</label>
+                        </form>
+                        <form action="" method="post" class="but-mes mod-but-hea">
+                            <button class="mod-but">Đăng kí</button>
+                        </form>
+                        <div class="mod-foo">Tôi đã có tài khoản! <strong><a href="#" data-toggle="modal" data-target=".mod-in" data-dismiss="modal">Đăng nhập</a></strong></div>
+                    </div><!--modal-content-->
+                </div><!--modal-dialog-->
+            </div><!--đăng kí-->  
+    <!--BLACK SCREEN-->
+    <div class="container-fluid"  id="bs"></div>
+    <!---HEAD--->
+    <div class="container-fluid  d-md-block d-none" id="hea">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 offset-xl-5
+                            col-lg-6 offset-lg-3
+                            col-md-8 offset-md-1">
+                    <form action="" method="post">
+                        <label class="" ></label>
+                        <input type="text" placeholder="Tìm kiếm ..." class="hea-sre-1">
+                        <button class="hea-sre-2"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="col-xl-2
+                            col-md-3 hea-use">
+                    <a href="" data-toggle="modal" data-target=".mod-in"><i class="fas fa-user"></i></a>
+                    <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div><!--row-->
+                
+        </div><!--container-->
+    </div><!--container-fluid-->
+    <!---NAVI--->
+    <div class="container-fluid d-none d-md-block" id="nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2
+                            col-md-2">
+                    <img src="images/logo-17.png" alt="" height="50px">
+                </div>
+                <div class="col-xl-8 offset-xl-2
+                            col-md-10 offset-md-0 d-sm-none d-md-block nav-tex">
+                    <ul>
+                        <li><a href="Contact.html">Liên hệ</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="Product.html">Sản phẩm</a>
+                        <i class="fas fa-caret-down" id="sp"></i></li>
+                        <li><a href="Aboutus.html">Giới thiệu</a></li>
+                        <li><a href="#">Trang chủ</a></li>
+                    </ul>
+                </div>
+            </div><!--row-->
+            <div class="col-xl-4 offset-xl-6" id="nav-sp">
+                <ul>
+                    <li><a href="Product.html">Bộ cờ gỗ</a></li>
+                    <li><a href="Product.html">Bộ cờ nhựa</a></li>
+                    <li><a href="Product.html">Bộ cờ đá</a></li>
+                    <li><a href="Product.html">Bộ cờ kim loại</a></li>
+                    <li><a href="Product.html">Bộ cờ chủ đề</a></li>
+                </ul>
+            </div>
+        </div><!--container-->   
+    </div><!--container-fluid-->
+    <!--navi mobile-->
+    <div class="container-fluid d-md-none nm"> 
+        <div class="row">
+            <div class="col-sm-4
+                        col-4 nav-nm">
+                <i class="fas fa-bars" id="nav-bar"></i>
+                <i class="fas fa-search" id="nav-sea"></i>
+            </div>
+            <div class="col-sm-4
+                        col-4 nav-mob-log">
+                    <img src="images/logo-17.png" alt="" height="50px">
+            </div>
+            <div class="col-sm-4
+                        col-4 hea-use">
+                <a href="" data-toggle="modal" data-target=".mod-in"><i class="fas fa-user"></i></a>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div><!--row-->
+            <div class="row">
+                <div class="col-sm-12
+                            col-12 nav-mob">
+                    <ul>
+                        <li><a href="Contact.html">Liên hệ</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="Product.html">Sản phẩm</a>
+                        <i class="fas fa-caret-down" id="sp1"></i></li>
+                            <div class="col-sm-12 nav-mob-sp">
+                                <ul>
+                                    <li><a href="Product.html">Bộ cờ gỗ</a></li>
+                                    <li><a href="Product.html">Bộ cờ nhựa</a></li>
+                                    <li><a href="Product.html">Bộ cờ đá</a></li>
+                                    <li><a href="Product.html">Bộ cờ kim loại</a></li>
+                                    <li><a href="Product.html">Bộ cờ chủ đề</a></li>
+                                </ul>
+                            </div>
+                        <li><a href="Aboutus.html">Giới thiệu</a></li>
+                        <li><a href="#">Trang chủ</a></li>
+                    </ul>
+                  </div>
+              </div><!--row-->
+            <div class="row">
+                <div class="col-sm-10 nav-mob-sea offset-sm-1">
+                    <form action="" method="post">
+                        <label class=""></label>
+                        <input type="text" placeholder="Tìm kiếm ..." class="hea-sre-3">
+                        <button class="hea-sre-4"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div><!--row-->
+    </div><!--container-fluid-->
+    <!---BANNER--->
+    <div class="container-fluid ban">
+        <div class="container">
+            <div class="row">
+                <div class="owl-carousel ban-hea">
+                    <div>
+                        <div class="ban-car-tit">"Hãy chơi theo phong cách của bạn"</div>
+                        <img src="images/hinh 1.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="ban-car-tit">"Đây là chiến trường của bạn"</div>
+                        <img src="images/hinh 2.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="ban-car-tit">"Hãy thất bại theo cách kẻ thắng"</div>
+                        <img src="images/hinh 3.jpg" alt="">
+                    </div>
+                </div><!--owl-carousel-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--container-fluid-->
+      
+    <!---PRODUCT--->  
+    <div class="container-fluid" id="pro">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12
+                            col-lg-12
+                            col-md-12
+                            col-sm-12
+                            col-12 pro-hea">
+                    <a>Sản phẩm mới nhất</a>
+                    <hr class="justify-content-center pro-lin">
+                </div>
+            </div><!--row-->
+        </div><!--container-->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6
+                            col-lg-6
+                            col-md-7
+                            col-sm-12">
+                    <div class="row">
+                        <div class="col-xl-12
+                                    col-lg-12
+                                    col-md-12
+                                    col-sm-12">
+                       <a href="Detail.html"> <img src="images/chess theme 1.jpg" alt="" width="100%" class="pro-hea-img"></a>
+                            <div class="row  pro-hea-tit">
+                                <div class="col-xl-6
+                                            col-lg-5
+                                            col-md-12
+                                            col-sm-12
+                                            col-12 pro-tit"> 
+                                    <div class="pro-tit-nam"> Bộ Thập tự chinh<br><strong>860.000đ</strong></div>
+                                </div>
+                                <div class="col-xl-6
+                                            col-lg-7 d-none d-lg-block">
+                                    <div class="pro-shop"><a href="Detail.html"><i class="fas fa-shopping-cart"></i></a></div>
+                                    <div class="pro-but-shop"><a href="Detail.html">Mua ngay</a></div>
+                                </div>
+                                <div class="d-lg-none"> 
+                                    <div class="pro-but-shop"><a href="Detail.html">Mua ngay</a></div>
+                                    <div class="pro-shop"><a href="Detail.html"><i class="fas fa-shopping-cart"></i></a></div>
+                                </div>
+                            </div><!--row--> 
+                        </div>
+                    </div><!--row--> 
+                </div>
+                <div class="col-xl-6
+                            col-lg-6 d-none d-lg-block">
+                    <div class="row">
+                            <div class="col-xl-12
+                                        col-lg-12 owl-carousel pro-hea-sp pro-hea-img">
+                                <a href="Detail.html"><img src="images/chess theme 1 (1).jpg" width="100%" alt=""></a>
+                                <a href="Detail.html"><img src="images/chess theme 1 (2).jpg" width="100%" alt=""></a>
+                            </div>
+                            <div class="col-xl-12
+                                        col-lg-12  owl-carousel pro-hea-sp pro-hea-img">
+                                <a href="Detail.html"><img src="images/chess theme 1 (3).jpg" width="100%" alt=""></a>
+                                <a href="Detail.html"><img src="images/chess theme 1 (4).jpg" width="100%" alt=""></a>
+                            </div>
+                    </div><!--row--> 
+                </div><!--xl-sceen--> 
+                <div class="col-md-5 d-none d-md-block d-lg-none">
+                    <div class="row">
+                        <div class="col-md-12
+                                    col-sm-12 owl-carousel pro-hea-sp pro-hea-img">
+                                <a href="Detail.html"><img src="images/chess theme 1 (1).jpg" width="50%" alt=""></a>
+                                <a href="Detail.html"><img src="images/chess theme 1 (2).jpg" width="50%" alt=""></a>
+                        </div>
+                    </div><!--row-->
+                    <div class="row">
+                        <div class="col-md-12
+                                    col-sm-12 owl-carousel pro-hea-sp pro-hea-img">
+                                <a href="Detail.html"><img src="images/chess theme 1 (3).jpg" width="100%" alt=""></a>
+                                <a href="Detail.html"><img src="images/chess theme 1 (4).jpg" width="100%" alt=""></a>
+                        </div>
+                    </div><!--row--> 
+                </div><!--md-sceen-->
+                <div class="col-sm-12
+                            col-12 d-md-none">
+                    <div class="row">
+                        <div class="col-sm-12
+                                    col-12  owl-carousel pro-hea-img">
+                                <a href="Detail.html"><img src="images/chess theme 1 (1).jpg" width="50%" alt=""></a>
+                                <a href="Detail.html"><img src="images/chess theme 1 (2).jpg" width="50%" alt=""></a>
+                                <a href="Detail.html"><img src="images/chess theme 1 (3).jpg" width="100%" alt=""></a>
+                                <a href="Detail.html"><img src="images/chess theme 1 (4).jpg" width="100%" alt=""></a>
+                        </div>
+                    </div><!--row--> 
+                </div><!--next-sceen-->
+            </div><!--row--> 
+        </div><!--container-->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12
+                            col-lg-12
+                            col-md-12
+                            col-sm-12 pro-hea">
+                    <a>Sản phẩm phổ biến</a>
+                    <hr class="justify-content-center pro-lin">
+                </div><!--row-->
+            </div><!--container-->
+            <div class="row">
+                <div class="col-xl-12
+                            col-lg-12
+                            col-md-12
+                            col-sm-12
+                            col-12 pro-ite owl-carousel">
+                            <div>
+                                <a href="Detail.html"><img src="images/Chess 1.jpg" alt=""></a>
+                                <div class=" row pro-sp">
+                                    <a href="Detail.html" class="pro-tit-nam"> Bộ Ambassador<br><strong>100.000đ</strong></a>
+                                    <div class="pro-but-shop"><a href="Detail.html">Mua ngay</a></div>
+                                    <div class="pro-shop"><a href="Detail.html"><i class="fas fa-shopping-cart"></i></a></div>
+                                </div><!--row-->
+                            </div><!--san pham-->
+                            <div>
+                                <a href="Detail.html"><img src="images/Chess 2.jpg" alt=""></a>
+                                <div class=" row pro-sp">
+                                    <a href="Detail.html" class="pro-tit-nam"> Bộ Zagreb<br><strong>200.000đ</strong></a>
+                                    <div class="pro-but-shop"><a href="Detail.html">Mua ngay</a></div>
+                                    <div class="pro-shop"><a href="Detail.html"><i class="fas fa-shopping-cart"></i></a></div>
+                                </div><!--row-->
+                            </div><!--san pham-->
+                            <div>
+                                <a href="Detail.html"><img src="images/Chess 3.jpg" alt=""></a>
+                                <div class=" row pro-sp">
+                                    <a href="Detail.html" class="pro-tit-nam"> Bộ Red Isle<br><strong>520.000đ</strong></a>
+                                    <div class="pro-but-shop"><a href="Detail.html">Mua ngay</a></div>
+                                    <div class="pro-shop"><a href="Detail.html"><i class="fas fa-shopping-cart"></i></a></div>
+                                </div><!--row-->
+                            </div><!--san pham-->
+                            <div>
+                                <a href="Detail.html"><img src="images/Chess 4.jpg" alt=""></a>
+                                <div class=" row pro-sp">
+                                    <a href="Detail.html" class="pro-tit-nam"> Bộ 3D Dragon<br><strong>940.000đ</strong></a>
+                                    <div class="pro-but-shop"><a href="Detail.html">Mua ngay</a></div>
+                                    <div class="pro-shop"><a href="Detail.html"><i class="fas fa-shopping-cart"></i></a></div>
+                                </div><!--row-->
+                            </div><!--san pham-->
+                </div><!--carousel-->
+            </div><!--row-->
+            <div class="row">
+                <div class="col-xl-12
+                            col-lg-12
+                            col-md-12
+                            col-sm-12
+                            col-12 pro-ite owl-carousel">
+                      <div>
+                        <a href="Detail.html"><img src="images/Chess 5.jpg" alt=""></a>
+                        <div class=" row pro-sp">
+                            <a href="Detail.html" class="pro-tit-nam"> Bộ Bobby Fischer<br><strong>730.000đ</strong></a>
+                            <div class="pro-but-shop"><a href="Detail.html">Mua ngay</a></div>
+                            <div class="pro-shop"><a href="Detail.html"><i class="fas fa-shopping-cart"></i></a></div>
+                        </div><!--row-->
+                    </div><!--san pham-->
+                    <div>
+                        <a href="Detail.html"><img src="images/Chess 6.jpg" alt=""></a>
+                        <div class=" row pro-sp">
+                            <a href="Detail.html" class="pro-tit-nam"> Bộ Solid Brass<br><strong>820.000đ</strong></a>
+                            <div class="pro-but-shop"><a href="Detail.html">Mua ngay</a></div>
+                            <div class="pro-shop"><a href="Detail.html"><i class="fas fa-shopping-cart"></i></a></div>
+                        </div><!--row-->
+                    </div><!--san pham-->
+                    <div>
+                        <a href="Detail.html"><img src="images/Chess 7.jpg" alt=""></a>
+                        <div class=" row pro-sp">
+                            <a href="Detail.html" class="pro-tit-nam"> Bộ Basic Club<br><strong>60.000đ</strong></a>
+                            <div class="pro-but-shop"><a href="Detail.html">Mua ngay</a></div>
+                            <div class="pro-shop"><a href="Detail.html"><i class="fas fa-shopping-cart"></i></a></div>
+                        </div><!--row-->
+                    </div><!--san pham-->
+                    <div>
+                        <a href="Detail.html"><img src="images/Chess 8.jpg" alt=""></a>
+                        <div class=" row pro-sp">
+                            <a href="Detail.html" class="pro-tit-nam"> Bộ nhựa giả kim<br><strong>160.000đ</strong></a>
+                            <div class="pro-but-shop"><a href="Detail.html">Mua ngay</a></div>
+                            <div class="pro-shop"><a href="Detail.html"><i class="fas fa-shopping-cart"></i></a></div>
+                        </div><!--row-->
+                    </div><!--san pham-->
+                </div><!--carousel-->
+            </div><!--row-->
+        </div><!--container-->
+        <div class="container">
+            <div class="row d-none d-sm-block">
+                <div class="col-xl-12
+                            col-lg-12
+                            col-md-12
+                            col-sm-12 pro-the">
+                        <div class="pro-the-hea-img">Bộ cờ theo chủ đề</div>
+                        <img src="images/Chess --- 1.jpg" width="100%" alt="">
+                </div>
+            </div><!--row-->
+            <div class="row">
+                <div class="col-xl-12
+                            col-lg-12
+                            col-md-12 d-none d-md-block pro-the owl-carousel">
+                    <div><div class="pro-the-img">Bộ cờ gỗ</div><img src="images/Chess --- 2.jpg" width="100%"></div>
+                    <div><div class="pro-the-img">Bộ cờ đá</div><img src="images/Chess --- 3.jpg" width="100%"></div>
+                    <div><div class="pro-the-img">Bộ cờ nhựa</div><img src="images/Chess --- 4.jpg" width="100%"></div>
+                    <div><div class="pro-the-img">Bộ cờ kim loại</div><img src="images/Chess --- 5.jpg" width="100%"></div>
+                </div>
+                <div class="col-sm-12
+                            col-12 d-md-none pro-the owl-carousel">
+                    <div><div class="pro-the-img">Bộ cờ theo chủ đề</div><img src="images/Chess --- 1.jpg" width="100%" ></div>
+                    <div><div class="pro-the-img">Bộ cờ gỗ</div><img src="images/Chess --- 2.jpg" width="100%"></div>
+                    <div><div class="pro-the-img">Bộ cờ đá</div><img src="images/Chess --- 3.jpg" width="100%"></div>
+                    <div><div class="pro-the-img">Bộ cờ kim loại</div><img src="images/Chess --- 4.jpg" width="100%"></div>
+                    <div><div class="pro-the-img">Bộ cờ kim loại</div><img src="images/Chess --- 5.jpg" width="100%"></div>
+                </div>
+            </div><!--row-->
+        </div><!--container-->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12
+                            col-md-12
+                            col-sm-12 pro-hea">
+                    <a>Sản phẩm nổi bật</a>
+                    <hr class="justify-content-center pro-lin">
+                </div>
+            </div><!--row--> 
+            <div class="row">
+                <div class="col-xl-12
+                            col-lg-12
+                            col-md-12
+                            col-sm-12
+                            col-12 pro-ite owl-carousel">
+                    <div>
+                        <a href="Detail.html"><img src="images/Chess 9.jpg" width="100%" alt=""></a>
+                        <div class=" row pro-sp">
+                            <a href="Detail.html" class="pro-tit-nam"> Bộ Jacques<br><strong>350.000đ</strong></a>
+                            <div class="pro-but-shop"><a href="Detail.html">Mua ngay</a></div>
+                            <div class="pro-shop"><a href="Detail.html"><i class="fas fa-shopping-cart"></i></a></div>
+                        </div><!--row--> 
+                    </div><!--san pham-->
+                    <div>
+                        <a href="Detail.html"><img src="images/Chess 10.jpg" width="100%" alt=""></a>
+                        <div class=" row pro-sp">
+                            <a href="Detail.html" class="pro-tit-nam"> Bộ Baubaus<br><strong>420.000đ</strong></a>
+                            <div class="pro-but-shop"><a href="Detail.html">Mua ngay</a></div>
+                            <div class="pro-shop"><a href="Detail.html"><i class="fas fa-shopping-cart"></i></a></div>
+                        </div><!--row--> 
+                    </div><!--san pham-->
+                    <div>
+                        <a href="Detail.html"><img src="images/Chess 11.jpg" width="100%" alt=""></a>
+                        <div class=" row pro-sp">
+                            <a href="Detail.html" class="pro-tit-nam"> Bộ Dimensional<br><strong>620.000đ</strong></a>
+                            <div class="pro-but-shop"><a href="Detail.html">Mua ngay</a></div>
+                            <div class="pro-shop"><a href="Detail.html"><i class="fas fa-shopping-cart"></i></a></div>
+                        </div><!--row--> 
+                    </div><!--san pham-->
+                    <div>
+                        <a href="Detail.html"><img src="images/Chess 12.jpg" width="100%" alt=""></a>
+                        <div class=" row pro-sp">
+                            <a href="Detail.html" class="pro-tit-nam"> Bộ đen trắng<br><strong>160.000đ</strong></a>
+                            <div class="pro-but-shop"><a href="Detail.html">Mua ngay</a></div>
+                            <div class="pro-shop"><a href="Detail.html"><i class="fas fa-shopping-cart"></i></a></div>
+                        </div><!--row--> 
+                    </div> <!--san pham-->
+                </div><!--carousel-->
+            </div><!--row-->  
+        </div><!--container--> 
+    </div><!--container-fluid-->
+    
+    <!---FOOT 1--->
+    <div class="container-fluid foo-1 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+               <div class="col-xl-6
+                           col-lg-6">
+                    <a class="foo-1-log"><img src="images/logo-18.png" alt="" height="55px"></a>
+                    <a class="foo-1-hea-foo">Đăng kí để nhận thông tin chi tiết</a>
+                    <form action="" method="post">
+                        <input class="foo-ema" placeholder="Email ..." type="text">
+                        <button class="foo-ema-but">Đăng nhập</button>
+                    </form>
+                    <div class="foo-1-thg">Email: liochess@gmail.com<br>Địa chỉ: 24/5 CMT8, Q.8, TP.HCM</div>
+                    <div class="foo-1-thg-1">Điện thoại: 02852223445<br>Fax: (2) 234 7672</div>
+                    <div class="foo-1-ico"><a href=""><i class="fab fa-youtube-square"></i></a><a href=""><i class="fab fa-facebook-square"></i></a><a href=""><i class="fab fa-twitter-square"></i></a></div>
+                </div>
+                <div class="col-xl-2
+                            col-lg-2">
+                    <a class="foo-1-tit">Thông tin</a>
+                    <div class="foo-tit-thg">
+                    <a href="Aboutus.html">Về chúng tôi</a>
+                    <a href="">Tin tức</a>
+                    <a href="">Dịch vụ</a>
+                    <a href="">Khuyến mãi</a></div>
+                </div>
+                <div class="col-xl-2
+                            col-lg-2">
+                    <a class="foo-1-tit">Chính sách</a>
+                    <div class="foo-tit-thg">
+                    <a href="">Riêng tư</a>
+                    <a href="">Đổi hàng</a>
+                    <a href="">Bán hàng</a>
+                    <a href="">Quy định</a></div>
+                </div>
+                <div class="col-xl-2
+                            col-lg-2">
+                    <a class="foo-1-tit">Liên hệ</a>
+                    <div class="foo-tit-thg">
+                    <a href="">Hướng dẫn</a>
+                    <a href="Contact.html">Hỏi đáp</a>
+                    <a href="Faq.html">FAQ</a>
+                    <a href="">Tài khoản</a></div>
+                </div>
+            </div><!--row-->   
+            <div class="row foo-bq"></div><!--row-->
+            <div class="row">
+                <div class="col-xl-3
+                            col-lg-4 foo-bq-tex">
+                    BẢN QUYỀN @2021 LIO CHESS
+                </div>
+                <div class="col-xl-5 offset-xl-4 
+                            col-lg-4 offset-lg-4 foo-bq-ico">
+                    <a><i class="fab fa-cc-paypal"></i></a>
+                    <a><i class="fab fa-cc-visa"></i></a>
+                    <a><i class="fab fa-cc-jcb"></i></a>
+                    <a><i class="fab fa-cc-mastercard"></i></a>
+                </div>    
+            </div><!--row--> 
+        </div><!--container--> 
+    </div><!--container-fluid--> 
+    <!---FOOT 2--->
+    <div class="container-fluid d-lg-none foo-1">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-12 offset-md-0
+                           col-sm-12 offset-sm-0
+                           col-12 offset-0">
+                    <a class="foo-1-log"><img src="images/logo-18.png" alt="" height="55px"></a>
+                </div>
+                <div class="col-md-12 offset-md-0
+                            col-sm-6 offset-sm-3
+                            col-7 offset-3 foo-1-thg">
+                            Email: liochess@gmail.com<br>Địa chỉ: 24/5 CMT8, Q.8, TP.HCM<br>Điện thoại: 02852223445<br>Fax: (2) 234 7672
+                </div>
+                <div class="col-md-4 offset-md-4
+                            col-sm-6 offset-sm-3
+                            col-6 offset-3 foo-1-ico">
+                    <a href=""><i class="fab fa-youtube-square"></i></a>
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div><!--row--> 
+            <div class="row">
+                <div class="col-md-3 offset-md-0
+                            col-sm-3 offset-sm-0     
+                            col-4 offset-0">
+                <a class="foo-1-tit">Thông tin</a>
+                <div class="foo-tit-thg">
+                    <a href="Aboutus.html">Về chúng tôi</a>
+                    <a href="">Tin tức</a>
+                    <a href="">Dịch vụ</a>
+                    <a href="">Khuyến mãi</a></div>
+                </div>
+                <div class="col-md-4 offset-md-1
+                            col-sm-4 offset-sm-1
+                            col-4 offset-0">
+                    <a class="foo-1-tit">Chính sách</a>
+                    <div class="foo-tit-thg">
+                        <a href="">Riêng tư</a>
+                        <a href="">Đổi hàng</a>
+                        <a href="">Bán hàng</a>
+                        <a href="">Quy định</a></div>
+                </div>
+                <div class="col-md-3 offset-md-1
+                            col-sm-3 offset-sm-1     
+                            col-4 offset-0">
+                    <a class="foo-1-tit">Liên hệ</a>
+                    <div class="foo-tit-thg">
+                        <a href="">Hướng dẫn</a>
+                        <a href="Contact.html">Hỏi đáp</a>
+                        <a href="Faq.html">FAQ</a>
+                        <a href="">Tài khoản</a></div>
+                </div>
+            </div><!--row--> 
+            <div class="row">
+                <div class="col-md-10 offset-md-2
+                            col-sm-12 offset-sm-0
+                            col-12 offset-0">
+                    <a class="foo-1-hea-foo">Đăng kí để nhận thông tin chi tiết</a>
+                    <form action="" method="post">
+                        <input class="foo-ema" placeholder="Email ..." type="text">
+                        <button class="foo-ema-but">Đăng nhập</button>
+                    </form>
+                </div>
+            </div><!--row-->
+            <div class="row foo-bq"></div><!--row--> 
+            <div class="row">
+                <div class="col-md-4
+                            col-sm-6
+                            col-7 foo-bq-tex">
+                    BẢN QUYỀN @2021 LIO CHESS
+                </div>
+                <div class="col-md-4 offset-md-4
+                            col-sm-5 offset-sm-1
+                            col-5 offset-0 foo-bq-ico">
+                    <a><i class="fab fa-cc-paypal"></i></a>
+                    <a><i class="fab fa-cc-visa"></i></a>
+                    <a><i class="fab fa-cc-jcb"></i></a>
+                    <a><i class="fab fa-cc-mastercard"></i></a>
+                </div>    
+            </div><!--row-->
+        </div><!--container--> 
+    </div><!--container-fluid--> 
+  </body>
+</html>

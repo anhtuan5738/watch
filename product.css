@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+.pro-1{
+    background-color: #eee;
+    padding: 30px;
+}
+.pro-sp{
+    margin-bottom: 30px;
+}
+.pro-fil{
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px 20px;
+    font-family: body;
+    font-size: 18px;
+}
+.pro-b a{
+    color: #000;
+    text-decoration: none;
+}
+.hea-pro{
+    background-color: #000;
+    padding: 15px 0px;
+    font-family: head;
+    color: #fff;
+    font-size: 22px;
+}
+.hea-pro a{
+    float: right;
+}
+.hea-pro i{
+    display: block;
+    margin-left: 15px;
+    margin-top: 4%;
+    float: right;
+}
+.hea-dro a{
+    color: #000;
+    text-decoration: none;
+}
+.hea-dro{
+    font-family: head;
+    font-size: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    top: 163;
+    z-index: 2;
+    float: right;
+    width: 180px;
+}
+.hea-dro-tex{
+    font-size: 18px;
+    padding: 5px 0px;
+}
+.pro-fil-lin{
+    border: 2px solid #000;
+    margin: 5px 0px;
+}
+.pro-fil-hea{
+    font-family: body;
+    font-size: 18px;
+    font-weight: bold;
+}
+.pro-fil ul{
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+    width: 100%;
+}
+.pro-fil ul li{
+    list-style-type: none;
+}
+
+.pro-page ul li{
+    margin: auto;
+    border: none;
+    outline: none;
+}
+.pro-page{
+    font-family: body;
+}
+#pro-fil-tit{
+    font-family: body;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+}
+.hea-pro-hea{
+    padding: 30px 15px 0px 15px;
+    background-color: #eee;
+}
+.hea-pro-hea{
+    height: 93px;
+}
+.pro-hea-loc{
+    position: absolute;
+    z-index: 200;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+}
+.pro-hea-loc a{
+    font-family: body;
+    font-size: 22px;
+}
+.pro-hea-loc i{
+    font-size:  20px;
+    margin-left: 45%;
+}
+.pro-hea-fil{
+    position: absolute;
+    z-index: 200;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+}
+.pro-hea-fil a{
+    font-family: body;
+    font-size: 22px;
+}
+.pro-hea-fil i{
+    font-size:  20px;
+    margin-left: 65%;
+}
+.pro-hea-fil-ite ul li{
+    list-style-type: none;
+}
+.pro-hea-fil-ite{
+    margin-top: 15px;
+}
+.pro-fil label{
+    margin: 0px;
+}
+.pro-fil input{
+    margin-right: 10px;
+}
+.pro-a label{
+    margin: 0px;
+}
+.pro-a input{
+    margin-right: 10px;
+}
+.pro-a ul{
+    padding: 0px;
+}
+.pro-a{
+    float: left;
+}
+.pro-pag-ite a{
+    color: #000;
+    background-color: #fff;
+    border: none;
+    font-size: 18px;
+}
+.pro-pag-act a{
+    color: #fff !important;
+    background-color: #4ba1a3 !important;
+}
+/*----Extra large----*/
+@media(min-width:1200px){
+   .hea-dro-tex:hover{
+        padding: 5px;
+        background: #000;
+        color: #fff;
+        transition: all ease .5s;
+        border-radius: 5px;
+    }
+    .pro-fil ul li:hover{
+        margin-left: 2%;
+        transition: all ease .5s;
+    }
+    .pro-pag-ite a:hover{
+        background-color: #000;
+        color: #fff;
+        transition: all ease .5s;
+    }
+}
+/*----LARGE----*/
+@media(min-width:992px) and (max-width:1190px){
+    .hea-dro-tex:hover{
+        padding: 5px;
+        background: #000;
+        color: #fff;
+        transition: all ease .5s;
+        border-radius: 5px;
+    }
+    .pro-fil ul li:hover{
+        margin-left: 2%;
+        transition: all ease .5s;
+    }
+    .pro-pag-ite a:hover{
+        background-color: #000;
+        color: #fff;
+        transition: all ease .5s;
+    }
+}
+/*----Medium----*/
+@media(min-width:768px) and (max-width:991px){
+    .pro-pag-ite a:hover{
+        background-color: #fff;
+        color: #000;
+    }
+}
+/*----SMALL----*/
+@media(min-width:576px) and (max-width:767px){
+    .pro-pag-ite a:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    .pro-hea-loc i{
+        margin-left: 20%;
+    }
+    .pro-hea-fil i{
+        margin-left: 60%;
+    }
+}
+/*----EXTRA SMALL----*/
+@media(max-width:575px){
+    .pro-pag-ite a:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    .pro-hea-fil i{
+        margin-left: 55%;
+    }
+    .pro-hea-loc i{
+        margin-left: 30%;
+    }
+}

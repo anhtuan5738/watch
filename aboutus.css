@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+.abo{
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    font-family: body;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.abo img{
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.abo-tex{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+.abo-ico{
+    font-size: 26px;
+    font-family: body;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    border-radius: 20px;
+}
+.abo-ico a{
+    display: block;
+}
+.abo-ico i{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 60px;
+}
+
+
+/*----Extra large----*/
+@media(min-width:1200px){
+}
+/*----LARGE----*/
+@media(min-width:992px) and (max-width:1190px){
+}
+/*----Medium----*/
+@media(min-width:768px) and (max-width:991px){
+
+}
+/*----SMALL----*/
+@media(min-width:576px) and (max-width:767px){
+
+}
+/*----EXTRA SMALL----*/
+@media(max-width:575px){
+
+}

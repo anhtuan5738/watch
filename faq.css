@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+.faq{
+    font-family: body;
+    margin-bottom: 60px;
+}
+.accordion{
+    font-size: 20px;
+    background-color: #4ba1a3;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.accordion i{
+    float: right;
+    margin-top: 5px;
+}
+.panel{
+    font-size: 18px;
+    margin: 0px 10px;
+    padding: 15px 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.faq-tit{
+    margin-left: 10px;
+    font-size: 22px;
+    margin-top: 30px
+}
+
+
+
+
+/*----Extra large----*/
+@media(min-width:1200px){
+   .active, .accordion:hover{
+        background-color: #000;
+        transition: all ease .5s;
+    }
+}
+/*----LARGE----*/
+@media(min-width:992px) and (max-width:1190px){
+    .active, .accordion:hover{
+        background-color: #000;
+        transition: all ease .5s;
+    }
+}
+/*----Medium----*/
+@media(min-width:768px) and (max-width:991px){
+ 
+}
+/*----SMALL----*/
+@media(min-width:576px) and (max-width:767px){
+   
+}
+/*----EXTRA SMALL----*/
+@media(max-width:575px){
+   
+}

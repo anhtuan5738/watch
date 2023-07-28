@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+.det{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    font-family: body;
+}
+.pro-shop{
+    clear: right;
+    float: left;
+}
+.pro-but-shop{
+    clear: right;
+    float: left;
+}
+.pro-det-shop a{
+    float: left;
+    margin-left: 20px;
+    padding: 8px 15px 0px 15px;
+    text-decoration: none;
+    background-color: #eee;
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: #4ba1a3;
+}
+.det-inf{
+    clear: left;
+    font-size: 18px;
+}
+#pro{
+    padding-top: 60px;
+}
+.det-foo{
+    margin-bottom: 30px;
+}
+.det-img img{
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.det-nex img{
+    border-radius: 20px;
+}
+.det-a{
+    font-size: 32px;
+    font-weight: bold;
+}
+.det-b{
+    font-size: 15px;
+    color: #989898;
+    margin-bottom: 30px;
+}
+.det-c{
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.det-d{
+    font-size: 26px;
+}
+.det-hea-e{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.det-e{
+    font-size: 18px;
+}
+.det-f{
+    font-size: 18px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.number-spinner {
+    max-width: 200px;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    display: table;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+}
+.pl-ns-value{
+    width: 60px;
+    height: 40px;
+    border: none;
+    float: left;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+}
+.def-hea-inf{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    clear: left;
+}
+.ns{
+    height: 40px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.ns-btn {
+    position: relative;
+    font-size: 20px;
+    display: table-cell;
+    background: #e2e2e2;
+    height: 40px;
+    vertical-align: middle;
+}
+.ns-btn a{
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+    border: none;
+    text-align: center;
+    background: #e2e2e2;
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+}
+.a:after {
+    content: "\002212";
+    font-size: 28px;
+    font-weight: bold;
+}
+.b:after {
+    content: "\00002B";
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.det-pro-inf{
+    font-family: body;
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+
+
+
+
+/*----Extra large----*/
+@media(min-width:1200px){
+   .pro-det-shop a:hover{
+        color:#fff;
+        background-color: #000;
+        transition: all ease .5s;
+    }
+}
+/*----LARGE----*/
+@media(min-width:992px) and (max-width:1190px){
+    .pro-det-shop a:hover{
+        color:#fff;
+        background-color: #000;
+        transition: all ease .5s;
+    }
+}
+/*----Medium----*/
+@media(min-width:768px) and (max-width:991px){
+ 
+}
+/*----SMALL----*/
+@media(min-width:576px) and (max-width:767px){
+   
+}
+/*----EXTRA SMALL----*/
+@media(max-width:575px){
+   
+}
